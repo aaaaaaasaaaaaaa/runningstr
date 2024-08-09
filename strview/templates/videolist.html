@@ -4,12 +4,11 @@
         <title>{% block title %}{% endblock %}</title>
     </head>
     <body>
-        <div id="sidebar">
-            <h3>Latest videos</h3>
-            {% for vid in videos %}
-            <p>
+        <h3>Latest videos</h3>
+        {% for vid in videos %}
+        <p>
             {{ vid }} created: {{vid.created }}, {{ vid.video }}
-            </p>
-            {% endfor %}
-        </div>
+        </p>
+        {% endfor %}
     </body>
+</html>

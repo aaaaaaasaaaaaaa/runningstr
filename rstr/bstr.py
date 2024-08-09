@@ -3,7 +3,7 @@ import numpy as np
 
 
 def create_video_stream(stringrun: str):
-    savepath = f"strview/videos/{stringrun[:20]}.mp4"
+    savepath = f"strview/videos/{stringrun[:100]}.mp4"
     # Разрешение видео
     w, h = 400, 300
     # Задаём параметры - видеопоток с частотой 30 кадров в сек
