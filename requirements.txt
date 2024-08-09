@@ -4,4 +4,4 @@ numpy==2.0.1
 opencv-python==4.10.0.84
 six==1.16.0
 sqlparse==0.5.1
-transliterate==1.10.2
+
