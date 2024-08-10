@@ -15,8 +15,8 @@ def runtext(request, stringrun):
     video = create_video_stream(stringrun)
     create_video = VideoStorage(title=video['title'], text=stringrun, video=video['video_path'])
     create_video.save()
-    response = HttpResponse(video, content_type='application/force-download')
-    response['Content-Disposition'] = f'attachment; filename="{create_video.title}.mp4"'
+    response = HttpResponse(create_video.video, content_type='application/force-download')
+    response['Content-Disposition'] = f'attachment; filename="{create_video.video.name}"'
     return response
 
 
